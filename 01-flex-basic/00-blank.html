@@ -34,6 +34,27 @@
       .menu-link:hover {
         color: white;
       }
+      .search-form {
+        display: flex;
+        margin: 10px;
+        height: 30px;
+      }
+
+      .search-form input[type="search"] {
+        border: 0px;
+        border-radius: 0.3em;
+        font-size: 1rem;
+        margin-right: 10px;
+        flex-grow: 1;
+      }
+
+      .search-form input[type="submit"] {
+        border: 0px;
+        border-radius: 0.3em;
+        font-size: 1rem;
+        background-color: gold;
+        font-weight: bold;
+      }
     </style>
   </head>
   <body>
@@ -51,5 +72,9 @@
         <a href="#" class="menu-link">Contact</a>
       </li>
     </ul>
+    <form action="" class="search-form">
+      <input type="search" />
+      <input type="submit" value="검색" />
+    </form>
   </body>
 </html>
