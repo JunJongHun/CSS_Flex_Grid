@@ -7,29 +7,49 @@
     <title>CSS Flex</title>
     <link rel="stylesheet" href="default.css" />
     <style>
-      .flex-container {
+      .menu {
         display: flex;
-        height: 300px;
-        align-items: center;
-        justify-content: center;
       }
-      .flex-item:nth-child(1) {
-        z-index: 10;
+      .menu-item {
+        background-color: gold;
+        width: 25%;
+        flex-grow: 1;
+        transition: 0.5s;
       }
-      .flex-item:nth-child(2) {
-        z-index: 100;
-        transform: scale(1.2);
+      .menu-item:hover {
+        background-color: crimson;
+        width: 35%;
+        transition: 1s;
+        /* flex-grow: 1.2; */
       }
-      .flex-item:nth-child(3) {
-        transform: scale(1.5);
+      .menu-link {
+        display: block;
+        padding: 1em;
+        color: black;
+        font-size: 1.2rem;
+        text-decoration: none;
+        font-weight: bold;
+        text-align: center;
+      }
+      .menu-link:hover {
+        color: white;
       }
     </style>
   </head>
   <body>
-    <div class="flex-container">
-      <div class="flex-item">AAAAAAAAAAAA</div>
-      <div class="flex-item">BBB</div>
-      <div class="flex-item">CCCCCCC</div>
-    </div>
+    <ul class="menu">
+      <li class="menu-item">
+        <a href="#" class="menu-link">Home</a>
+      </li>
+      <li class="menu-item">
+        <a href="#" class="menu-link">About</a>
+      </li>
+      <li class="menu-item">
+        <a href="#" class="menu-link">Product</a>
+      </li>
+      <li class="menu-item">
+        <a href="#" class="menu-link">Contact</a>
+      </li>
+    </ul>
   </body>
 </html>
