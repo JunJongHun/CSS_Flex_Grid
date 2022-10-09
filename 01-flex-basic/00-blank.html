@@ -7,61 +7,52 @@
     <title>CSS Flex</title>
     <link rel="stylesheet" href="default.css" />
     <style>
-      .info-list__item {
-        display: flex;
-        margin: 0.5em 0;
-      }
-      .info-list__item:before {
-        content: "★";
+      .user-photo {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 2px solid black;
+        background-color: gold;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 150%;
+
+        flex-shrink: 0;
         margin-right: 0.5em;
+      }
+      .user-item {
+        display: flex;
+        margin-bottom: 10px;
       }
     </style>
   </head>
   <body>
-    <ul class="info-list">
-      <li class="info-list__item">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, a?
-        Ullam possimus asperiores quibusdam natus qui, similique atque error ad,
-        voluptas odio deserunt odit libero, delectus officia corrupti doloremque
-        consequuntur. Et nemo voluptatem, ipsa deleniti consequatur optio ipsum
-        quo quae corporis. Distinctio voluptate eligendi numquam dignissimos
-        placeat a voluptas magnam rerum sunt consequuntur odit ab inventore,
-        quasi, beatae illo! Dolorem? Deleniti beatae in iure illo quod tenetur
-        similique amet quaerat quibusdam nihil, aspernatur, sequi sint quas?
-        Neque quos, blanditiis consequuntur reiciendis nostrum tempore
-        consequatur. Laudantium molestiae ipsa consequuntur veniam quibusdam.
-        Facere in ipsa dignissimos at? Nostrum laudantium ex nulla deserunt
-        temporibus, cum quae suscipit adipisci nemo recusandae iusto dolorum
-        perferendis nisi iste! Expedita minus corrupti ea cupiditate laboriosam
-        officiis id.
+    <ul class="user-list message-list">
+      <li class="user-item message-item">
+        <figure
+          class="user-photo"
+          style="background-image: url(images/ilbuni.png)"
+        ></figure>
+        <p class="mesaage-content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          aspernatur accusantium ab quod sunt, illum iusto velit non in
+          explicabo delectus quos quae unde quaerat eaque? Nihil suscipit a
+          quasi?
+        </p>
       </li>
-      <li class="info-list__item">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eius
-        asperiores at! Esse perferendis possimus asperiores eum, vero laudantium
-        ex veniam repellendus odio dolorem ab aspernatur fugit accusamus non
-        modi? Deleniti nobis deserunt minima nisi saepe dolores. Blanditiis
-        minus officiis ab culpa, eius totam molestiae nobis consequuntur illum
-        fuga aut ex aperiam sit assumenda debitis soluta, itaque similique?
-        Dolorem, sed? Et veniam, voluptatem a similique soluta error harum
-        deserunt voluptate maiores quis necessitatibus ut aperiam laudantium
-        ratione vitae culpa architecto quibusdam ex incidunt ipsum saepe est
-        placeat consectetur numquam. Provident?
+      <li class="user-item message-item">
+        <figure
+          class="user-photo"
+          style="background-image: url(images/ilbuni.png)"
+        ></figure>
+        <p class="mesaage-content">hellow meaeajkfdsajlkf</p>
       </li>
-      <li class="info-list__item">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, a?
-        Ullam possimus asperiores quibusdam natus qui, similique atque error ad,
-        voluptas odio deserunt odit libero, delectus officia corrupti doloremque
-        consequuntur. Et nemo voluptatem, ipsa deleniti consequatur optio ipsum
-        quo quae corporis. Distinctio voluptate eligendi numquam dignissimos
-        placeat a voluptas magnam rerum sunt consequuntur odit ab inventore,
-        quasi, beatae illo! Dolorem? Deleniti beatae in iure illo quod tenetur
-        similique amet quaerat quibusdam nihil, aspernatur, sequi sint quas?
-        Neque quos, blanditiis consequuntur reiciendis nostrum tempore
-        consequatur. Laudantium molestiae ipsa consequuntur veniam quibusdam.
-        Facere in ipsa dignissimos at? Nostrum laudantium ex nulla deserunt
-        temporibus, cum quae suscipit adipisci nemo recusandae iusto dolorum
-        perferendis nisi iste! Expedita minus corrupti ea cupiditate laboriosam
-        officiis id.
+      <li class="user-item message-item">
+        <figure
+          class="user-photo"
+          style="background-image: url(images/ilbuni.png)"
+        ></figure>
+        <p class="mesaage-content">hellow meaeajkfdsajlkf</p>
       </li>
     </ul>
   </body>
