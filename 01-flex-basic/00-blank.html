@@ -7,40 +7,150 @@
     <title>CSS Flex</title>
     <link rel="stylesheet" href="default.css" />
     <style>
-      .modal {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.3);
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      .card-container {
+        overflow-x: hidden;
       }
-      .dialog {
-        width: 300px;
+      .card-item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+      }
+      .card-img {
+        height: 0;
+        padding-bottom: 60%;
+        background-color: lightblue;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      .card-img img {
+        display: none;
+      }
+      .card-desc {
+        flex-grow: 1;
+        padding: 1em;
+        background-color: white;
+      }
 
-        justify-content: center;
-        align-items: center;
-        background-color: azure;
-        text-align: center;
-        padding: 20px;
-        border-radius: 15px;
+      @media (min-width: 600px) {
+        .card-list {
+          display: flex;
+          flex-wrap: wrap;
+          margin: 0 -1em;
+          /* justify-content: space-around; */
+        }
+        .card-item {
+          width: 50%;
+          padding: 0 1em;
+        }
+      }
+      @media (min-width: 1200px) {
+        .card-item {
+          width: 33.333333333%;
+        }
       }
     </style>
   </head>
   <body>
-    <div>둥글게 둥글게</div>
-    <div class="modal">
-      <div class="dialog">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sint
-        quam labore commodi nihil dolorem odio ipsum delectus eum, ea animi
-        eligendi reiciendis vel, modi neque! Suscipit rerum consequatur ullam.
-        Maxime accusantium quia sit ab, praesentium suscipit quaerat? Incidunt n
-        explicabo! Minima, laudantium.
-      </div>
+    <div class="card-container">
+      <ul class="card-list">
+        <li class="card-item">
+          <figure
+            class="card-img"
+            style="background-image: url(images/ilbuni.png)"
+          >
+            <img src="images/ilbuni.png" alt="일분이" srcset="" />
+          </figure>
+          <div class="card-desc">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam et
+            explicabo recusandae? Minus, animi deserunt. Non ipsam quisquam rem
+          </div>
+        </li>
+        <li class="card-item">
+          <figure
+            class="card-img"
+            style="background-image: url(images/ilbuni.png)"
+          >
+            <img src="images/ilbuni.png" alt="일분이" srcset="" />
+          </figure>
+          <div class="card-desc">Lorem ipsum dolor sit,nes quisquam rem</div>
+        </li>
+        <li class="card-item">
+          <figure
+            class="card-img"
+            style="background-image: url(images/ilbuni.png)"
+          >
+            <img src="images/ilbuni.png" alt="일분이" srcset="" />
+          </figure>
+          <div class="card-desc">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam et
+            explicabo recusandae? Minus, animi deseripsum dolor sit, amet
+            consectetur adipisicing elit. Numquam et explicabo recusandae? ipsum
+            dolor sit, amet consectetur adipisicing elit. Numquam et explicabo
+            recusandae? unt. Non ipsam quisquam rem
+          </div>
+        </li>
+        <li class="card-item">
+          <figure
+            class="card-img"
+            style="background-image: url(images/ilbuni.png)"
+          >
+            <img src="images/ilbuni.png" alt="일분이" srcset="" />
+          </figure>
+          <div class="card-desc">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam et
+            explicabo recusandae? Minus, animi deserunt. Non ipsam quisquam rem
+          </div>
+        </li>
+        <li class="card-item">
+          <figure
+            class="card-img"
+            style="background-image: url(images/ilbuni.png)"
+          >
+            <img src="images/ilbuni.png" alt="일분이" srcset="" />
+          </figure>
+          <div class="card-desc">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam et
+            explicabo recusandae? Minus, animi deserunt. Non ipsam quisquam rem
+          </div>
+        </li>
+        <li class="card-item">
+          <figure
+            class="card-img"
+            style="background-image: url(images/ilbuni.png)"
+          >
+            <img src="images/ilbuni.png" alt="일분이" srcset="" />
+          </figure>
+          <div class="card-desc">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam et
+            explicabo recusandae? Minus, animi deserunt. Non ipsam quisquam rem
+          </div>
+        </li>
+        <li class="card-item">
+          <figure
+            class="card-img"
+            style="background-image: url(images/ilbuni.png)"
+          >
+            <img src="images/ilbuni.png" alt="일분이" srcset="" />
+          </figure>
+          <div class="card-desc">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam et
+            explicabo recusandae? Minus, animi deserunt. Non ipsam quisquam rem
+          </div>
+        </li>
+        <li class="card-item">
+          <figure
+            class="card-img"
+            style="background-image: url(images/ilbuni.png)"
+          >
+            <img src="images/ilbuni.png" alt="일분이" srcset="" />
+          </figure>
+          <div class="card-desc">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam et
+            explicabo recusandae? Minus, animi deserunt. Non ipsam quisquam rem
+          </div>
+        </li>
+      </ul>
     </div>
   </body>
 </html>

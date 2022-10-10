@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>CSS Flex</title>
-	<link rel="stylesheet" href="default.css">
-	<style>
-		.flex-container {
-			display: flex;
-			align-items: stretch;
-			/* align-items: flex-start; */
-			/* align-items: flex-end; */
-			/* align-items: center; */
-			/* align-items: baseline; */
-			height: 300px;
-		}
-	</style>
-</head>
-<body>
-	<div class="flex-container">
-		<div class="flex-item">AAAAAAAAAAAA</div>
-		<div class="flex-item">BBB</div>
-		<div class="flex-item">CCCCCCC</div>
-	</div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Flex</title>
+    <link rel="stylesheet" href="default.css" />
+    <style>
+      .container {
+        display: flex;
+      }
+      .container-item {
+        padding: 10px;
+        text-align: center;
+        background-color: gold;
+        font-size: large;
+        font-weight: bold;
+        flex-basis: 0;
+        flex-grow: 1;
+        transition: 1s;
+        /* border: 1px solid black; */
+      }
+      .container-item:hover {
+        cursor: pointer;
+        background-color: crimson;
+        flex-grow: 1.5;
+        transition: 1s;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-item">show</div>
+      <div class="container-item">me</div>
+      <div class="container-item">the</div>
+      <div class="container-item">money</div>
+    </div>
+  </body>
 </html>
