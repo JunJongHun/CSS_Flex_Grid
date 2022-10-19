@@ -7,9 +7,44 @@
     <title>CSS Flex</title>
     <link rel="stylesheet" href="default.css" />
     <link rel="stylesheet" href="ui.css" />
+    <style>
+      #modal-switch {
+        font-size: 30px;
+      }
+      #modal-switch:checked + .modal {
+        display: flex;
+
+        z-index: 5;
+      }
+      .modal {
+        display: none;
+      }
+      .sss:before {
+        z-index: 10;
+        position: static;
+        content: "#";
+        font-size: 40px;
+        color: blue;
+        background: red;
+        width: 60px;
+      }
+      span,
+      #modal-switch {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        opacity: 0;
+        top: 0;
+      }
+    </style>
   </head>
   <body>
-    <div>원래 페이지</div>
+    <label class="sss" for="modal-switch">
+      <span>modal 열고 닫기</span>
+    </label>
+
+    <input type="checkbox" name="" id="modal-switch" />
     <div class="modal">
       <div class="dialog">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
