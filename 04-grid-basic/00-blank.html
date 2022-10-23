@@ -1,13 +1,42 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>CSS Grid</title>
-	<link rel="stylesheet" href="default.css">
-</head>
-<body>
-	
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Grid</title>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(200px, auto);
+        gap: 30px;
+      }
+      .grid-item {
+      }
+    </style>
+    <link rel="stylesheet" href="default.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item">a</div>
+      <div class="grid-item">b</div>
+      <div class="grid-item">c</div>
+      <div class="grid-item">a</div>
+      <div class="grid-item">b</div>
+      <div class="grid-item">c</div>
+      <div class="grid-item">a</div>
+      <div class="grid-item">b</div>
+      <div class="grid-item">c</div>
+      <div class="grid-item">a</div>
+      <div class="grid-item">b</div>
+      <div class="grid-item">c</div>
+      <div class="grid-item">a</div>
+      <div class="grid-item">b</div>
+      <div class="grid-item">c</div>
+      <div class="grid-item">a</div>
+      <div class="grid-item">b</div>
+      <div class="grid-item">c</div>
+    </div>
+  </body>
 </html>
